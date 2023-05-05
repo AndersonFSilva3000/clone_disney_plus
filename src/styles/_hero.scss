@@ -7,12 +7,50 @@
   text-align: center;
   background-size: cover;
 
+  @media (max-width: 768px) {
+    background-image: url(../images/hero_celular.jpeg);
+    padding-top: calc(50vw + 25px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -55px;
+  }
+
+  @media (max-width: 1023px) {
+    background-image: url(../images/hero_tablet.jpg);
+    padding-top: calc(50vw + 25px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -85px;
+
+  }
+
+  .button {
+    margin-top: 2vw;
+    margin-bottom: 8px;
+
+
+    @media (max-width: 1023px) {
+      max-width: 350px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
   &__content {
     max-width: 640px;
+
+    @media (max-width: 1023px) {
+      max-width: 500px;
+      margin: 0 auto;
+    }
 
     &__branding {
       max-width: 200px;
       margin: 0 auto 38px;
+
+      @media (max-width: 768px) {
+        max-width: 180px;
+      }
     }
 
     .title--small {
@@ -31,9 +69,24 @@
     &__combos {
       display: flex;
       justify-content: space-between;
+
+      @media (max-width: 768px) {
+        display: block;
+      }
+
+      @media (max-width: 1023px) {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+      }
     
       &__combo {
         width: calc(50% - 12px);
+
+        @media (max-width: 768px) {
+          width: 100%;
+          margin-bottom: 24px;
+        }
 
         img {
           max-height: 60px;
